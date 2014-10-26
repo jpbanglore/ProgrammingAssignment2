@@ -4,6 +4,12 @@
 ## caches it using the makeCacheMatrix function. 
 
 ## This function has the getter/setter for matrix and its inverse.
+## Input to this function - a special matrix that is always invertible.
+## First, a matrix needs to be initialized by calling 
+## amatrix = makeCacheMatrix(matrix(c(1,2,3,4), nrow=2, ncol=2))
+## To call the get function use this notation amatrix$get. Similarly, to get Inverse 
+## of the matrix use this sequence of calls - cacheSolve(amatrix), amatrix$getinverse().
+
 
 makeCacheMatrix <- function(x = matrix()) {
 
